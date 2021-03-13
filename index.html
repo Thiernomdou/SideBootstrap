@@ -9,7 +9,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Ekko -->
+    <!-- CSS Ekko -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -193,23 +193,329 @@
 
 
 
+    <!-- Prémière bannière -->
+
+    <section id="ban1" class="py-2">
+        <div class="container py-5">
+            <h2 class="pb-3">Etes-vous prêt à commencer?</h2>
+            <!-- le texte va disparaitre à partir de medium(md) -->
+            <p class="text-dark d-none d-md-block">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Molestias autem voluptatem explicabo 
+                provident, adipisci delectus.</p>
+                <a href="#" class="btn btn-primary">Démarrer Maintenant</a>
+        </div>
+    </section>
 
 
 
 
+    <!-- Section Galerie -->
+
+    <section id="galerie">
+
+        <div class="container">
+            <h2 class="text-center h2Photos">Nos Projets</h2>
+            <p class="text-center">Nos réalisations</p>
+
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row mb-3">
+                        <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=251" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                        <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=252" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=253" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                    </div>
+
+                    <div class="row">
+                        <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=254" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                        <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=255" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                        <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <!-- img fluid permet de rendre l'image responsive -->
+                        <img src="https://unsplash.it/1200/768.jpg?image=256" class="img-fluid" alt="portfolio image">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
     
 
 
-    <!-- Scripts -->
+    <!-- Seconde bannière (caroussel texte) -->
+
+    <section id="ban2" class="py-2">
+        <div class="container">
+            <!-- data-ride="carousel" veut dire que
+            carousel va se lancer dès que la page va charger -->
+            <div class="carousel slide" id="carouselContent" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- active veut dire que la carousel 
+                    commence à cet item -->
+                    <div class="carousel-item active text-center p-4">
+                        <p class="font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+
+                    <div class="carousel-item text-center p-4">
+                        <p class="font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Cartes -->
+
+    <section id="prix">
+        <h2 class="text-center offreH">Nos Offres</h2>
+        <hr>
+        <div class="container" id="cartes">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="threeCards">
+                        <div class="header">
+                            <h2><span id="spanPrix">9,99 €</span> / mois</h2>
+                            <div class="type">
+                                <h2>Amateur</h2>
+                            </div>
+                        </div>
+
+                        <div class="details">2G Bande Passante</div>
+                        <div class="details">150GB de Stockage</div>
+                        <div class="details">5 Profils</div>
+                        <div class="details">3 Noms de Domaine</div>
+                        <div id="btn"><a href="#">S'inscrire</a></div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="threeCards">
+                        <div class="header">
+                            <h2><span id="spanPrix">79,99 €</span> / mois</h2>
+                            <div class="type">
+                                <h2>Professionnel</h2>
+                            </div>
+                        </div>
+
+                        <div class="details">4G Bande Passante</div>
+                        <div class="details">850GB de Stockage</div>
+                        <div class="details">15 Profils</div>
+                        <div class="details">10 Noms de Domaine</div>
+                        <div id="btn"><a href="#">S'inscrire</a></div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="threeCards">
+                        <div class="header">
+                            <h2><span id="spanPrix">400 €</span> / mois</h2>
+                            <div class="type">
+                                <h2>Entreprise</h2>
+                            </div>
+                        </div>
+
+                        <div class="details">10G Bande Passante</div>
+                        <div class="details">2000GB de Stockage</div>
+                        <div class="details">80 Profils</div>
+                        <div class="details">100 Noms de Domaine</div>
+                        <div id="btn"><a href="#">S'inscrire</a></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section Progress bar -->
+
+    <section id="progress">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 competences">
+                    <h2>Nos Compétences</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nihil facere ullam blanditiis repudiandae explicabo 
+                        delectus inventore magni quibusdam. Totam vero 
+                        necessitatibus explicabo, quam maxime maiores. 
+                        Quisquam distinctio quod sint, deserunt doloremque vel pariatur 
+                        quis magni voluptas maxime ducimus ex atque.</p>
+                </div>
+
+                <div class="col-md-6 pt-1">
+                    <p class="m-0">Marketing Digital</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                    </div>
+
+                    <p class="m-0">Groth Hacking</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"></div>
+                    </div>
+
+                    <p class="m-0">Communication</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                    </div>
+
+                    <p class="m-0">Réseau</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Nos Clients -->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <a href="#">
+                        <img src="/img/spotify.jpg" alt="spotify">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <a href="#">
+                        <img src="/img/microsoft.jpg" alt="microsoft">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <a href="#">
+                        <img src="/img/apple.jpg" alt="apple">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <a href="#">
+                        <img src="/img/google.jpg" alt="google">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="bg-light py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Contactez-nous</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta praesentium repudiandae harum itaque iusto accusamus?</p>
+
+                    <form action="">
+                        <div class="input-group input-group-lg mb-3">
+                            
+                            <!-- rajouter une petite icone avant le input -->
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Nom">
+                        
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            
+                            <!-- rajouter une petite icone avant le input -->
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Email">
+                        
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            
+                            <!-- rajouter une petite icone avant le input -->
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                            </div>
+
+                            <textarea rows="5" class="form-control" placeholder="Message"></textarea>
+                        
+                        </div>
+
+                        <!-- Bouton submit -->
+                        <input type="submit" value="Envoyer" class="btn btn-primary btn-block btn-lg">
+                    
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+
+
+
+
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+        <!-- JS de Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <!-- JS de Ekko -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     
     <script src="/js/app.js"></script>

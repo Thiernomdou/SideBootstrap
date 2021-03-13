@@ -54,3 +54,173 @@ h1 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+/* Première bannière */
+
+#ban1 {
+    position: relative;
+    background: url('../img/banniere1.png');
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Galerie */
+
+#galerie {
+    padding-bottom: 100px;
+}
+
+.h2Photos {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Kaushan Script';
+    font-size: 70px;
+}
+
+#galerie .container p {
+    padding-bottom: 40px;
+}
+
+/* Seconde Bannière (Carousel) */
+
+#ban2 {
+    position: relative;
+    min-height: 250px;
+    background: url('../img/Banniere2.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#carouselContent {
+    margin-top: 70px;
+    font-size: 35px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* Cartes */
+
+.offreH {
+    font-size: 70px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-family: 'Kaushan Script';
+}
+
+#cartes {
+    padding: 50px 0 10px 0;
+}
+
+.threeCards {
+    width: 300px;
+    height: 520px;
+    margin: 30px auto;
+    position: relative;
+    transition: 0.2s ease-in;
+    box-shadow: 0px 10px 30px black;
+}
+
+.threeCards:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background: rgba(216, 216, 216, 0.5);
+}
+
+.header h2 {
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+#spanPrix {
+    font-size: 40px;
+}
+
+.type {
+    /* la couleur en haut de la carde */
+    height: 120px;
+    width: 300px;
+    background: rgba(2, 2, 2, 0.5);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: absolute;
+    top: 0;
+}
+
+.type h2 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.details {
+    background: white;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Lato';
+    transition: all 0.2s ease-in;
+}
+
+.details:hover {
+    background: rgba(181, 208, 230, 0.1);
+}
+
+#btn {
+    background: #fff;
+    height: 80px;
+}
+
+#btn a {
+    text-decoration: none;
+    font-family: 'Lato';
+    height: 50px;
+    width: 120px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    top: 10px;
+    border-radius: 30px;
+    border: 1px solid #22a7f0;
+    /* ease in : l'animation lent au début et rapide à la fin
+    ease-out : l'animation rapide au début, lent à la fin */
+    transition: all 0.2s ease-in;
+}
+
+#btn a:hover {
+    background: rgba(6, 136, 206, 0.8);
+    color: #fff;
+}
+
+/* Progress section */
+
+#progress {
+    border-top: 1px dashed #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Clients */
+
+#clients {
+    border-top: 1px dashed #000;
+    border-bottom: 1px solid #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
