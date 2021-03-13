@@ -28,9 +28,14 @@ h1 {
 
 /* Nav */
 
+#main-nav {
+    transition: all 0.4s ease;
+}
+
 .navbar-brand {
     font-size: 45px!important;
     font-family: 'Kaushan Script'!important;
+    transition: all 0.4s ease;
 }
 
 .navbar a {
@@ -38,6 +43,17 @@ h1 {
     font-family: 'Lato';
     font-size: 22px;
     font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.navbar.opaque .navbar-brand {
+    font-size: 27px!important;
+    transition: all 0.4s ease;
+}
+
+.navbar .opaque a {
+    font-size: 18px;
+    transition: all 0.4s ease;
 }
 
 /* A propos */
