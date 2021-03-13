@@ -240,3 +240,54 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 75vh;
+    }
+
+    .preText {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 81px;
+    }
+
+}
+
+@media screen and (max-width: 762px) {
+    #progress {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 55vh;
+    }
+
+    .text-intro {
+        padding-top: 200px;
+    }
+
+    .text-intro a {
+        transform: scale(0.8);
+    }
+
+    .navbar-brand {
+        font-size: 35px!important;
+    }
+
+    .preText {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 51px;
+    }    
+}
